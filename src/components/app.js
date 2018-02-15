@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './header';
+import Window from './window';
 import Feed from './feed';
 import MusicPlayer from './music-player';
 import Image from './image';
@@ -9,20 +10,25 @@ import Footer from './footer'
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <Header />
+      <div>
+        <marquee>Welcome to VaporChain!</marquee>
+        <div className="container">
+          <Header />
 
-        <div className="app__body">
-          <div className="app__body-left">
-            <Feed />
+          <div className="app__body">
+            <div className="app__body-left">
+              <Window title="Feed">
+                <Feed />
+              </Window>
+            </div>
+            <div className="app__body-right">
+              <MusicPlayer />
+              <Image />
+            </div>
           </div>
-          <div className="app__body-right">
-            <MusicPlayer />
-            <Image />
-          </div>
+
+          <Footer />
         </div>
-
-        <Footer />
       </div>
     );
   }

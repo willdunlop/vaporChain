@@ -1,4 +1,18 @@
 .header {
-  background: solid red;
-  padding: 4em;
+  width: 100%;
+  /* border: solid #ccc 2px; */
+  border: 2px solid;
+  border-bottom-color: #535353;
+  border-right-color: #535353;
+  border-left-color: #dbdbdb;
+  border-top-color: #dbdbdb;
+  background-color: #bfbfbf;
   margin-bottom: 1em; }
+
+.header__logo {
+  padding: 2em;
+  display: flex; }
+
+.header__logo-image {
+  width: 20em;
+  margin: 0 auto; }

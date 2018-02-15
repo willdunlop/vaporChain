@@ -15,49 +15,13 @@
   max-width: 75em;
   position: relative;
   width: 80em;
-  background: #008080;
-  padding: 2em; }
-
-/**
-* Components
-*/
-.app__body {
-  display: flex;
-  margin-bottom: 2em; }
-  @media screen and (min-width: px-em(map-reach((phone: (min-width: 320px, max-width: 599px), tablet7: (min-width: 600px, max-width: 767px), tablet: (min-width: 768px, max-width: 1024px), laptop: (min-width: 1025px, max-width: 1366px), desktop: (min-width: 1367px, max-width: 1600px)), tablet, min-width))) {
-    .app__body {
-      flex-direction: column; } }
-
-.app__body-left {
-  width: 40%;
-  margin-right: 2em; }
-
-.app__body-right {
-  width: 60%; }
-
-.header {
-  background: #bfbfbf;
-  padding: 4em;
-  margin-bottom: 2em; }
-
-.feed {
-  background: #bfbfbf;
-  height: 100%;
-  padding: 3em;
-  box-sizing: border-box; }
-
-.music {
-  background: #bfbfbf;
-  padding: 2.5em;
-  margin-bottom: 2em; }
-
-.image {
-  background: #bfbfbf;
-  padding: 3em; }
-
-.footer {
-  background: #bfbfbf;
-  padding: 3em; }
+  padding: 2em 6em;
+  border: 2px solid;
+  background-color: #008080;
+  border-bottom-color: #003030;
+  border-right-color: #003030;
+  border-left-color: #00d0d0;
+  border-top-color: #00d0d0; }
 
 /**
 * resetters
@@ -543,3 +507,160 @@ table {
   overflow: visible;
   position: static;
   width: auto; }
+
+/**
+* Components
+*/
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: url("/assets/images/sunny_clouds_sky.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+marquee {
+  background-color: #808080;
+  color: #bcbcbc;
+  padding: .5em 0;
+  font-size: 1.25em;
+  margin-bottom: 1em; }
+
+.app__body {
+  display: flex;
+  margin-bottom: 2em; }
+  @media screen and (min-width: px-em(map-reach((phone: (min-width: 320px, max-width: 599px), tablet7: (min-width: 600px, max-width: 767px), tablet: (min-width: 768px, max-width: 1024px), laptop: (min-width: 1025px, max-width: 1366px), desktop: (min-width: 1367px, max-width: 1600px)), tablet, min-width))) {
+    .app__body {
+      flex-direction: column; } }
+
+.app__body-left {
+  width: 40%;
+  margin-right: 2em; }
+
+.app__body-right {
+  width: 60%; }
+
+.header {
+  width: 100%;
+  border: 2px solid;
+  border-bottom-color: #535353;
+  border-right-color: #535353;
+  border-left-color: #dbdbdb;
+  border-top-color: #dbdbdb;
+  background-color: #bfbfbf;
+  margin-bottom: 1em; }
+
+.header__logo {
+  padding: 2em;
+  display: flex; }
+
+.header__logo-image {
+  width: 20em;
+  margin: 0 auto; }
+
+.window {
+  border: 2px solid;
+  border-bottom-color: #535353;
+  border-right-color: #535353;
+  border-left-color: #dbdbdb;
+  border-top-color: #dbdbdb;
+  background-color: #bfbfbf;
+  max-width: 600px;
+  font-size: 13px;
+  padding: 2px; }
+
+ul.toolbar {
+  list-style: none;
+  padding: 2px 0;
+  margin: 0; }
+
+li {
+  display: inline-block;
+  padding: 0 5px; }
+
+ul.icons {
+  list-style: none;
+  padding: 2px 0;
+  margin: 0; }
+
+li {
+  display: inline-block;
+  padding: 0 5px; }
+
+.statusbar {
+  display: flex; }
+
+.left, .right {
+  border: 1px solid;
+  border-color: #888 #dadada #dadada #888;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 11px; }
+
+.left {
+  width: 33%; }
+
+.right {
+  width: 66%; }
+
+.window__title {
+  background-color: #808080;
+  padding: 2px 4px 3px 4px;
+  position: relative; }
+
+h1 {
+  font-weight: bold;
+  color: #bcbcbc;
+  font-size: 13px;
+  margin: 0; }
+
+.window__button {
+  border: 2px solid;
+  border-bottom-color: #444;
+  border-right-color: #444;
+  border-left-color: #a6a6a6;
+  border-top-color: #a6a6a6;
+  background-color: #bfbfbf;
+  position: absolute;
+  font-size: 9px;
+  line-height: 0;
+  padding: 1px;
+  height: 15px;
+  width: 15px;
+  top: 2px; }
+  .window__button--minimize {
+    right: 34px; }
+  .window__button--expand {
+    right: 18px; }
+  .window__button--close {
+    right: 2px; }
+
+@font-face {
+  font-family: "Perfect-DOS";
+  src: url("/assets/fonts/Perfect-DOS-VGA-437.ttf"); }
+
+.feed {
+  font-style: "Perfect-Dos", Arial, serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25em;
+  border: 2px solid;
+  border-bottom-color: #c7c7c7;
+  border-right-color: #c7c7c7;
+  border-left-color: #808080;
+  border-top-color: #808080;
+  background-color: #000000;
+  color: #eee;
+  padding: 10px;
+  min-height: 25em; }
+
+.music {
+  background: #bfbfbf;
+  padding: 2.5em;
+  margin-bottom: 2em; }
+
+.image {
+  background: #bfbfbf;
+  padding: 3em; }
+
+.footer {
+  background: #bfbfbf;
+  padding: 3em; }

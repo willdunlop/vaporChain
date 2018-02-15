@@ -22,16 +22,6 @@
 @import "./objects/container.scss";
 
 /**
-* Components
-*/
-@import "./components/app.scss";
-@import "./components/header.scss";
-@import "./components/feed.scss";
-@import "./components/music-player.scss";
-@import "./components/image.scss";
-@import "./components/footer.scss";
-
-/**
 * resetters
 */
 @import "./reseter/normalize.scss";
@@ -43,3 +33,13 @@
 * Utils
 */
 @import "./utils/visually-hidden.scss";
+/**
+* Components
+*/
+@import "./components/app.scss";
+@import "./components/header.scss";
+@import "./components/window.scss";
+@import "./components/feed.scss";
+@import "./components/music-player.scss";
+@import "./components/image.scss";
+@import "./components/footer.scss";

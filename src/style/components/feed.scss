@@ -1,6 +1,23 @@
+@font-face {
+  font-family: "Perfect-DOS";
+  src: url('/assets/fonts/Perfect-DOS-VGA-437.ttf');
+}
+
 .feed {
-    background: $silver;
-    height: 100%;
-    padding: 3em;
-    box-sizing: border-box;
+  font-style: "Perfect-Dos", Arial, serif;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 1.25em;
+  border: 2px solid;
+  border-bottom-color: $dark-silver;
+  border-right-color: $dark-silver;
+  border-left-color: $grey;
+  border-top-color: $grey;
+  background-color: $black;
+  color: #eee;
+  padding: 10px;
+  min-height: 25em;
+}
+
+.feed__login {
 }

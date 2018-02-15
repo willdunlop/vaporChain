@@ -3,7 +3,11 @@
   max-width: 75em;
   position: relative;
   width: 80em;
-
-  background: $deep-teal;
-  padding: 2em;
+  padding: 2em 6em;
+  border: 2px solid;
+  background-color: $deep-teal;
+  border-bottom-color: #003030;
+  border-right-color: #003030;
+  border-left-color: #00d0d0;
+  border-top-color: #00d0d0;
 }
