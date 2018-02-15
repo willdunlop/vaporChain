@@ -1,0 +1,11 @@
+.app__body {
+  display: flex;
+  margin-bottom: 2em;
+  @includemedia (from tablet); }
+
+.app__body-left {
+  width: 40%;
+  margin-right: 2em; }
+
+.app__body-right {
+  width: 60%; }
