@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ipfs": "^0.27.7",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.2",
+    "orbit-db": "^0.19.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"

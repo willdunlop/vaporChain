@@ -6,24 +6,31 @@ export default class Feed extends Component {
 
     this.state = {
       userName: '',
+      inputValue: '',
     }
   }
 
-  renderLogin() {
-    return (
-      <div class="feed__login">
-        VAPORCHAT
-      </div>
-    )
+  updateInput(inputValue) {
+    this.setState({ inputValue })
+  }
+
+  formSubmit() {
+    console.log('yo');
   }
 
   renderChat() {
     const { userName } = this.state;
     return (
       <div class="feed__chat">
-        <p><span>~AcquiredTaste: </span> This is what the feed will look like</p>
-        <p><span>George: </span> Looks pretty cool</p>
-      C:\{userName}>
+
+      <form onSubmit={this.formSubmit()}>
+        <input 
+          type="text" 
+          value={this.state.inputValue}
+          onChange={e => this.updateInput(e.target.value)}
+          placeholder="Enter Text"
+        />
+      </form>
     </div>
     )
   }
@@ -31,11 +38,7 @@ export default class Feed extends Component {
   render() {
     return (
       <div class="feed">
-      {
-        this.state.userName
-          ? this.renderChat()
-          : this.renderLogin()
-      }
+      { this.renderChat() }
     </div>
     );
 
