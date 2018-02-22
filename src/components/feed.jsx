@@ -24,8 +24,9 @@ export default class Feed extends Component {
       <div class="feed__chat">
 
       <form onSubmit={this.formSubmit()}>
-        <input 
-          type="text" 
+        <input
+          type="text"
+          className="feed__input"
           value={this.state.inputValue}
           onChange={e => this.updateInput(e.target.value)}
           placeholder="Enter Text"

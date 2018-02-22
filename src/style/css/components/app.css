@@ -1,0 +1,23 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: url("/assets/images/sunny_clouds_sky.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+marquee {
+  background-color: #808080;
+  color: #bcbcbc;
+  padding: .5em 0;
+  font-size: 1.25em;
+  margin-bottom: 1em; }
+
+.app__body {
+  display: flex;
+  margin-bottom: 2em; }
+
+.app__body-left {
+  width: 40%;
+  margin-right: 2em; }
+
+.app__body-right {
+  width: 60%; }

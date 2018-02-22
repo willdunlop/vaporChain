@@ -1,0 +1,30 @@
+@font-face {
+  font-family: PerfectDOS;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/Perfect-DOS-VGA-437.ttf') format("tff");
+}
+
+.feed {
+  font-style: PerfectDOS;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 1.25em;
+  border: 2px solid;
+  border-bottom-color: $dark-silver;
+  border-right-color: $dark-silver;
+  border-left-color: $grey;
+  border-top-color: $grey;
+  background-color: $black;
+  color: #eee;
+  padding: 10px;
+  min-height: 25em;
+}
+
+.feed__input {
+  width: 100%;
+  position: relative;
+  background: $black;
+  border: solid thin $dark-silver;
+  padding: .5em;
+}

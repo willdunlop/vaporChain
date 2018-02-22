@@ -1,0 +1,40 @@
+
+.app__marquee {
+  background-color: #808080;
+  color: #bcbcbc;
+  padding: .5em 0;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.app__body {
+    display: flex;
+    margin-bottom: 2em;
+
+    // @include media(from tablet) {
+    //     flex-direction: column;
+    // }
+}
+
+.app__container {
+  margin: 0 auto;
+  max-width: 75em;
+  position: relative;
+  width: 80em;
+  padding: 2em 6em;
+  border: 2px solid;
+  background-color: $deep-teal;
+  border-bottom-color: #003030;
+  border-right-color: #003030;
+  border-left-color: #00d0d0;
+  border-top-color: #00d0d0;
+}
+
+.app__body-left {
+    width: 40%;
+    margin-right: 2em;
+}
+
+.app__body-right {
+    width: 60%;
+}

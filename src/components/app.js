@@ -11,8 +11,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <marquee>Welcome to VaporChain!</marquee>
-        <div className="container">
+        <marquee className="app__marquee">Welcome to VaporChain!</marquee>
+        <div className="app__container">
           <Header />
 
           <div className="app__body">
